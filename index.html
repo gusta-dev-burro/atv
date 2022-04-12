@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Média Aritmética</title>
+</head>
+
+<body>
+    <header>
+        <h1>Média Aritmética</h1>
+    </header>
+    <section>
+        <h2>Média Aritmética</h2>
+
+        <input type="text" id="numero1" class="numeros" placeholder="Digite um numero"><br>
+        <input type="text" id="numero2" class="numeros" placeholder="Digite um numero"><br>
+        <input type="text" id="numero3" class="numeros" placeholder="Digite um numero"><br>
+        <input type="text" id="numero4" class="numeros" placeholder="Digite um numero"><br>
+        <input type="button" value="Realizar operação" id="btMedia">
+        <p id="resposta"></p>
+    </section>
+    <footer>
+        <p>Todos os Direitos Reservados</p>
+        <p>Desenvolvido por <strong>Gustavo O Brabo</strong></p>
+    </footer>
+    <script>
+        function calcularMedia(){
+            var numero1 = document.getElementById("numero1");
+            var numero2 = document.getElementById("numero2");
+            var numero3 = document.getElementById("numero3");
+            var numero4 = document.getElementById("numero4");
+            var resposta = document.getElementById("resposta");
+
+
+            var num1 = Number(numero1.value);
+            var num2 = Number(numero2.value);
+            var num3 = Number(numero3.value);
+            var num4 = Number(numero4.value);
+
+            if(num1 == "" || isNaN(num1) && num2 == "" || isNaN(num2) && num3 == "" || isNaN(num3) && num4 == "" || isNaN(num4)){
+                alert("Digite os números corretamente");
+                
+                numero1.focus();
+                return;
+            }
+
+            var media = (num1 + num2 + num3 + num4) / 2;
+
+            resposta.textContent= "A média dos números é "+ media;
+        }
+
+        var btMedia = document.getElementById("btMedia");
+        btMedia.addEventListener("click",calcularMedia);
+
+    </script>
+</body>
+
+</html>

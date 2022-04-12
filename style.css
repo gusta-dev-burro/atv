@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #340735;
+    height: 80px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    
+}
+header h1{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+section{
+    
+    margin: auto;
+    display: block;
+    background-color: #651366;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 350px;
+    clear: both;
+}
+section h2, p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+footer{
+    background-color: #340735;
+    height: 80px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    clear: both;
+    padding-top: 20px;
+}
+footer p{
+    
+
+    text-align: center;
+    color: white;
+}
+#btMedia{
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    padding: 3px;
+}
+.numeros{
+    
+    display: block;
+    margin: auto;
+    padding: 3px;
+    
+    border-radius: 7px;
+}
